@@ -7,6 +7,7 @@ public class SimulacionHospital {
     public static void main(String[] args) {
         RecursoMedico salaRayosX = new RecursoMedico("Equipo de Rayos X");
 
+        
         ExecutorService executor = Executors.newFixedThreadPool(4); //creo 4 hilos concurrentes
 
         executor.execute(new ProfesionalMedico("Dr. Pérez", salaRayosX));
